@@ -1,15 +1,23 @@
 {
-    "name": "paramsToTree",
-    "version": "0.0.1",
-    "description": "",
-    "main": "index.js",
-    "author": "Renat Gafarov",
-    "license": "ISC",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/acusticdemon/params-to-tree.git"
-    },
-    "dependencies": {
-        "lodash": "4.11.1"
-    }
+  "name": "params-to-tree",
+  "version": "0.0.2",
+  "description": "Decomposite get params to tree",
+  "main": "index.js",
+  "author": "Renat Gafarov",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acusticdemon/params-to-tree.git"
+  },
+  "dependencies": {
+    "lodash": "4.11.1"
+  },
+  "bugs": {
+    "url": "https://github.com/acusticdemon/params-to-tree/issues"
+  },
+  "homepage": "https://github.com/acusticdemon/params-to-tree#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
