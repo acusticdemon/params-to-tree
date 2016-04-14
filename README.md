@@ -1,5 +1,8 @@
 # Params to tree
 
+## Install
+```npm install params-to-tree```
+
 ## Examples
 ```User.id > 5 AND User.id < 10```
 ```
