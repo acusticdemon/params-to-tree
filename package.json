@@ -2,7 +2,7 @@
   "name": "params-to-tree",
   "version": "0.0.2",
   "description": "Decomposite get params to tree",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "Renat Gafarov",
   "license": "ISC",
   "repository": {
@@ -16,8 +16,15 @@
     "url": "https://github.com/acusticdemon/params-to-tree/issues"
   },
   "homepage": "https://github.com/acusticdemon/params-to-tree#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel -d lib src",
+    "build:watch": "babel -w -d lib src",
+    "postpublish": "rm -rf lib",
+    "prepublish": "npm run build"
   }
 }
