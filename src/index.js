@@ -1,11 +1,12 @@
 "use strict";
 
-var _ = require('lodash');
+const _ = require('lodash');
 
 module.exports = (params) => {
     let toNull = value => /^null$/i.test(value) ? null : value;
     let toNumber = value => /^\d*$/.test(value) && +value < Number.MAX_SAFE_INTEGER ? +value : value;
-    let convert = _.flow(toNull, toNumber);
+    let toBoolean = value => /^(true|false)$/.test(value) ? JSON.parse(value) : value;
+    let convert = _.flow(toNull, toNumber, toBoolean);
 
     return _.reduce(
         params,
