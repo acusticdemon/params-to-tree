@@ -1,6 +1,6 @@
 {
   "name": "params-to-tree",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Decomposite get params to tree",
   "main": "lib/index.js",
   "author": "Renat Gafarov",
